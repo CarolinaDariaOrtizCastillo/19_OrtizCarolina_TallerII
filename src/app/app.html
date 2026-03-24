@@ -1,0 +1,26 @@
+<div class="main-layout">
+  
+  <h2>{{ title }}</h2>
+
+  <div class="grid-usuarios">
+    <div class="card" *ngFor="let user of postPaginados">
+      <img [src]="user.image" alt="Avatar">
+      <h3>{{ user.firstName }} {{ user.lastName }}</h3>
+      <p>{{ user.email }}</p> 
+      <span class="id">ID: {{ user.id }}</span>
+    </div>
+  </div>
+
+  <div class="paginacion">
+    <button (click)="paginaAnterior()" [disabled]="paginaActual === 1">
+      Anterior
+    </button>
+    
+    <span>Página {{ paginaActual }}</span>
+    
+    <button (click)="siguientePagina()" [disabled]="(paginaActual * itemsPorPagina) >= post.length">
+      Siguiente
+    </button>
+  </div>
+
+</div>

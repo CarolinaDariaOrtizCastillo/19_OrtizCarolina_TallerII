@@ -1,0 +1,92 @@
+/* 1. EL PADRE: Centra todo el contenido verticalmente */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ESTO centra título, grid y botones */
+  justify-content: center;
+  width: 100%;
+  background-color: #F9F6E6;
+  padding: 40px 0;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #8D77AB;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+/* 2. EL GRID/FLEX: Controla el 3 arriba y 2 abajo */
+.grid-usuarios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las cards que sobran abajo */
+  gap: 20px;
+  /* El secreto: 280px (card) * 3 + gaps = aprox 900px */
+  max-width: 950px; 
+  margin: 0 auto 50px auto;
+}
+
+/* 3. LAS CARDS: Con tus efectos interactivos */
+.card {
+  background-color: #E1EACD;
+  border: 1px solid #BAD8B6;
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px; /* Tamaño fijo para forzar el salto de línea */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: #BAD8B6;
+  box-shadow: 0 12px 20px rgba(141, 119, 171, 0.2);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #F9F6E6;
+  background: white;
+  margin-bottom: 15px;
+  transition: 0.4s;
+}
+
+.card:hover img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* 4. PAGINACIÓN: Centrada */
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.paginacion button {
+  background-color: #8D77AB;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.paginacion button:hover:not(:disabled) {
+  transform: scale(1.1);
+  background-color: #7a6696;
+}
