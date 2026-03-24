@@ -1,4 +1,26 @@
-# APIANGULAR
+# 🚀 Angular User List API
+
+Proyecto desarrollado en **Angular** que consume una API externa para mostrar un listado de usuarios con diseño interactivo y paginación funcional.
+
+## 🛠️ Características Implementadas
+* **Consumo de API:** Conexión con `https://dummyjson.com/users` mediante `HttpClient`.
+* **Servicio Centralizado:** Uso de `ApiService` para gestionar las peticiones `GET`.
+* **Paginación Dinámica:** Lógica en TypeScript para mostrar **5 ítems por página** (3 arriba, 2 abajo centrados).
+* **Diseño Personalizado:** * Paleta de colores: `#BAD8B6`, `#E1EACD`, `#F9F6E6`, `#8D77AB`.
+    * Efectos **Hover**: Levitación de tarjetas (`translateY`) y rotación de imágenes.
+* **Componentes Standalone:** Arquitectura modular y limpia.
+
+## 📦 Tecnologías Utilizadas
+* **Angular** (Componentes, Servicios, Directivas `*ngFor` / `*ngIf`).
+* **TypeScript** (Lógica de arreglos y métodos de navegación).
+* **CSS Moderno** (Flexbox para alineación exacta y Transiciones suaves).
+
+## 🚀 Ejecución
+1. Instalar dependencias: `npm install`
+2. Correr servidor local: `ng serve`
+3. Abrir en: `http://localhost:4200`
+
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
 
