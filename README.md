@@ -2,6 +2,11 @@
 
 Proyecto desarrollado en **Angular** que consume una API externa para mostrar un listado de usuarios con diseño interactivo y paginación funcional.
 
+## 📸 Vista Previa
+<p align="center">
+  <img width="400" alt="Captura de pantalla de la App" src="https://github.com/user-attachments/assets/4aa7e153-ea14-4d42-8f70-8d65237ebbcc" />
+</p>
+
 ## 🛠️ Características Implementadas
 * **Consumo de API:** Conexión con `https://dummyjson.com/users` mediante `HttpClient`.
 * **Servicio Centralizado:** Uso de `ApiService` para gestionar las peticiones `GET`.
