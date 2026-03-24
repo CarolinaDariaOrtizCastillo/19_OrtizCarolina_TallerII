@@ -21,7 +21,7 @@ Proyecto desarrollado en **Angular** que consume una API externa para mostrar un
 3. Abrir en: `http://localhost:4200`
 
 
-
+#ANGULAR
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
 
 ## Development server
